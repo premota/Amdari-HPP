@@ -87,12 +87,3 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
         
-if __name__ == "__main__":
-    try:
-        ingestion_obj = DataCollection()
-        df = ingestion_obj.initiate_data_collection()
-
-        transform_obj = DataTransformation()
-        train_df, test_df = transform_obj.initiate_data_transformation(df)
-    except Exception as e:
-        raise CustomException(e,sys)
