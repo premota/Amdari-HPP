@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 from typing import List
 
-editable = - "-e ."
+editable = "-e ."
 def find_requirements(file_path: str)-> List[str]:
     requirements = []
     with open(file_path) as file_obj:
@@ -13,7 +13,7 @@ def find_requirements(file_path: str)-> List[str]:
 
 
 
-set(
+setup(
     name = "House price prediction",
     version = "0.1",
     author = "precious",

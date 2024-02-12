@@ -19,7 +19,7 @@ class DataCollection:
         logging.info("Data ingestion about to begin")
         try:
             df = pd.read_csv(self.collection_path.clean_data_path)
-            logging.info("data has been read")
+            logging.info("data has been read, data ingestion completed")
 
             return df
         except Exception as e:
